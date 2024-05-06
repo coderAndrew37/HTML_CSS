@@ -1,0 +1,94 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  
+}
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(2, 43, 43, 0), rgba(2, 43, 43, 0));
+  position: relative;
+  display: flex;
+  padding: 0.4%;
+  align-items: center;
+  justify-content: center;
+}
+
+nav{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4%;
+}
+
+nav .logo{
+  width: 80px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-left: 45px;
+  list-style: none;
+  margin-left: 40px;
+}
+
+nav ul li a{
+  text-decoration: none !important;
+  color: white;
+  font-size: 20px;
+}
+
+.content{
+  text-align: center !important;
+}
+
+.content h1{
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.content a{
+  text-decoration: none !important;
+  color: #fff;
+  font-size: 25px;
+  display: inline-block ;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 14px 70px;
+}
+
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media(min-aspect-ratio:16/9){
+  .content h1{
+    font-size: 100px;
+  }
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media(max-aspect-ratio:16/9){
+  .content h1{
+    font-size: 100px;
+  }
+  .back-video{
+    width: auto;
+    height: 100%;;
+  }
+}
